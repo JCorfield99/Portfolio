@@ -1,3 +1,89 @@
+h1,
+h2 {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h2:not(.heading-sub) {
+    display: block;
+    text-align: center;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 300;
+}
+
+a {
+    color: #39c0ed;
+}
+
+.header {
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+    border-bottom: solid 3px #39c0ed;
+}
+
 .heading-btn {
     transition: .75s;
+}
+
+.heading-main {
+    font-size: 3.5rem;
+}
+
+.heading-main strong {
+    color: #39c0ed;
+}
+
+.main {
+    width: 50%;
+}
+
+.about-heading {
+    border-bottom: solid 3px #bc13fe;
+}
+
+.skills {
+    list-style: none;
+}
+
+.skill {
+    text-align: center;
+}
+
+.skill p {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.icon {
+    height: 100px;
+    color: #fff;
+}
+
+.portfolio-heading {
+    border-bottom: solid 3px #fff01f;
+}
+
+.contact-heading {
+    border-bottom: solid 3px #39ff14;
+}
+
+.profile-img {
+    width: 100%;
+    transition-duration: 1s;
+    border-radius: 50% 2%;
+    box-shadow: 10px 10px #666, 0px 0px #333;
+    filter: grayscale(1);
+}
+
+.profile-img:hover {
+    box-shadow: 30px 30px #39c0ed, -20px -20px #bc13fe;
+    filter: grayscale(0);
 }
