@@ -27,6 +27,15 @@ a {
     color: #39c0ed;
 }
 
+small {
+    font-size: .85rem;
+}
+
+i {
+    font-style: normal;
+    color: #bc13fe;
+}
+
 form[name='send-email'] {
     width: 50%;
 }
@@ -42,11 +51,18 @@ input:focus:not([type='submit']),
 textarea:focus[id='message'] {
     background-color: #1f3a4b;
     color: #fff;
-    box-shadow: 0 0 0 .25rem #39ff14;
+    box-shadow: 0 0 0 .25rem #bc13fe;
 }
 
 input[type='email']::placeholder {
     color: #39c0ed;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 10px 0;
+    background-color: #1f3a4b;
+    text-align: center;
 }
 
 .header {
@@ -69,6 +85,7 @@ input[type='email']::placeholder {
 
 .main {
     width: 50%;
+    min-width: 900px;
 }
 
 .about-heading {
@@ -107,7 +124,7 @@ input[type='email']::placeholder {
 }
 
 .portfolio-heading {
-    border-bottom: solid 3px #fff01f;
+    border-bottom: solid 3px #bc13fe;
 }
 
 .project-card {
@@ -131,9 +148,26 @@ input[type='email']::placeholder {
 }
 
 .contact-heading {
-    border-bottom: solid 3px #39ff14;
+    border-bottom: solid 3px #bc13fe;
 }
 
 #contact p {
     text-align: center;
+}
+
+.link {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-icon {
+    height: 50px;
+    transition-duration: .5s;
+    color: #fff;
+}
+
+.footer-icon:hover {
+    color: #39c0ed;
 }
