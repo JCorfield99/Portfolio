@@ -128,14 +128,30 @@
             </div><!-- /portfolio -->
 
             <!-- contact -->
-            <div id="contact">
+            <div id="contact" class="container">
                 <h2 class="contact-heading my-5 pb-3">Contact</h2>
-                [contact information]
+                <p>Want to ask me something or work on a project together?</p>
+                <p>Get in touch:</p>
+                <form class="container" name="send-email">
+                    <div class="mb-3 row justify-content-between">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3 row justify-content-between">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-3 row justify-content-around">
+                        <label for="message" class="form-label">Your message</label>
+                        <textarea class="form-control" id="message" rows="8" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-outline-info btn-lg">Submit</button>
+                </form>
             </div><!-- /contact -->
         </div>
 
         <footer>
-            
+
         </footer>
 
         <!-- Bootstrap JavaScript -->

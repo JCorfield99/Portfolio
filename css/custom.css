@@ -27,13 +27,35 @@ a {
     color: #39c0ed;
 }
 
+form[name='send-email'] {
+    width: 50%;
+}
+
+input:not([type='submit']),
+textarea[id='message'] {
+    background-color: #101e27;
+    color: #fff;
+    border-color: #39c0ed;
+}
+
+input:focus:not([type='submit']),
+textarea:focus[id='message'] {
+    background-color: #1f3a4b;
+    color: #fff;
+    box-shadow: 0 0 0 .25rem #39ff14;
+}
+
+input[type='email']::placeholder {
+    color: #39c0ed;
+}
+
 .header {
     height: 100vh;
     text-align: center;
     background-color: rgba(0, 0, 0, .4);
 }
 
-.heading-btn {
+.btn {
     transition: .75s;
 }
 
@@ -110,4 +132,8 @@ a {
 
 .contact-heading {
     border-bottom: solid 3px #39ff14;
+}
+
+#contact p {
+    text-align: center;
 }
