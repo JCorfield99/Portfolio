@@ -1,3 +1,7 @@
+/* ======================================== */
+/* === Variable Selectors ================= */
+/* ======================================== */
+
 body {
     background-color: #101e27;
     color: #fff;
@@ -8,8 +12,12 @@ h2 {
     font-family: 'Comfortaa', sans-serif;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 h2:not(.heading-sub) {
@@ -19,7 +27,7 @@ h2:not(.heading-sub) {
 
 p {
     font-family: 'Nunito', sans-serif;
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -34,10 +42,6 @@ small {
 i {
     font-style: normal;
     color: #bc13fe;
-}
-
-form[name='send-email'] {
-    width: 50%;
 }
 
 input:not([type='submit']),
@@ -65,6 +69,10 @@ footer {
     text-align: center;
 }
 
+/* ======================================== */
+/* === Class Selectors ==================== */
+/* ======================================== */
+
 .header {
     height: 100vh;
     text-align: center;
@@ -75,34 +83,26 @@ footer {
     transition: .75s;
 }
 
-.heading-main {
-    font-size: 3.5rem;
-}
-
 .heading-main strong {
     color: #bc13fe;
 }
 
-.main {
-    width: 50%;
-    min-width: 900px;
+.row:not(.project-cards) {
+    --bs-gutter-x: 0;
 }
+
+/* === About === */
 
 .about-heading {
     border-bottom: solid 3px #bc13fe;
 }
 
 .profile-img {
-    width: 100%;
-    transition-duration: 1s;
-    border-radius: 50% 2%;
-    box-shadow: 10px 10px #666, 0px 0px #333;
-    filter: grayscale(1);
-}
-
-.profile-img:hover {
-    box-shadow: 30px 30px #39c0ed, -20px -20px #bc13fe;
-    filter: grayscale(0);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 50%;
 }
 
 .skills {
@@ -123,12 +123,14 @@ footer {
     color: #fff;
 }
 
+/* === Portfolio === */
+
 .portfolio-heading {
     border-bottom: solid 3px #bc13fe;
 }
 
 .project-card {
-    overflow: hidden;
+    text-align: center;
 }
 
 .project-card p {
@@ -136,23 +138,15 @@ footer {
 }
 
 .preview {
-    width: 100%;
+    width: 75%;
     transition-duration: .5s;
     border-radius: 50%;
-    filter: grayscale(1);
 }
 
-.preview:hover {
-    border-radius: 5%;
-    filter: grayscale(0);
-}
+/* === Contact === */
 
 .contact-heading {
     border-bottom: solid 3px #bc13fe;
-}
-
-#contact p {
-    text-align: center;
 }
 
 .link {
@@ -170,4 +164,65 @@ footer {
 
 .footer-icon:hover {
     color: #39c0ed;
+}
+
+/* ======================================== */
+/* === ID Selectors ======================= */
+/* ======================================== */
+
+#contact p {
+    text-align: center;
+}
+
+/* ======================================== */
+/* === Media Queries ====================== */
+/* ======================================== */
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.15rem;
+    }
+
+    form[name='send-email'] {
+        width: 50%;
+    }
+
+    .profile-img {
+        width: 100%;
+        margin-bottom: 0;
+        transition-duration: 1s;
+        border-radius: 50% 2%;
+        box-shadow: 10px 10px #666, 0px 0px #333;
+        filter: grayscale(1);
+    }
+
+    .profile-img:hover {
+        box-shadow: 30px 30px #39c0ed, -20px -20px #bc13fe;
+        filter: grayscale(0);
+    }
+
+    .preview {
+        width: 100%;
+        filter: grayscale(1);
+    }
+
+    .preview:hover {
+        border-radius: 5%;
+        filter: grayscale(0);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .main {
+        width: 50%;
+        min-width: 900px;
+    }
 }
