@@ -141,6 +141,7 @@ footer {
     width: 75%;
     transition-duration: .5s;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 /* === Contact === */
